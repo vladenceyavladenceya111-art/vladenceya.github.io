@@ -136,6 +136,26 @@ ul li { margin: 10px 0; }
   from { opacity: 0; transform: translateY(-18px); }
   to { opacity: 1; transform: translateY(0); }
 }
+.lang-switch {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.lang-switch button {
+  background: var(--accent-2);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.lang-switch button:hover {
+  background: var(--accent);
+}
 
 @media (max-width: 720px) {
   .main-content { padding: 0 14px; }
@@ -144,3 +164,4 @@ ul li { margin: 10px 0; }
   .header-title { font-size: 20px; }
   .next-page { padding: 10px 18px; }
 }
+
