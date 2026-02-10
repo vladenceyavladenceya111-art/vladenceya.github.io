@@ -6,16 +6,16 @@
 }
 
 /* Variables */
-:root{
-  --accent:#1b3b6f;
-  --accent-2:#3752a0;
-  --bg-gradient-start:#d0e6f7;
-  --bg-gradient-end:#ffffff;
-  --text:#222;
+:root {
+  --accent: #1b3b6f;
+  --accent-2: #3752a0;
+  --bg-gradient-start: #d0e6f7;
+  --bg-gradient-end: #ffffff;
+  --text: #222;
 }
 
 /* Base */
-html,body {
+html, body {
   height: 100%;
 }
 
@@ -24,12 +24,12 @@ body {
   line-height: 1.6;
   background: linear-gradient(to bottom, var(--bg-gradient-start), var(--bg-gradient-end));
   color: var(--text);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
 
-/* Header (sticky bar) */
+/* Header */
 header.header {
   background: var(--accent);
   color: #fff;
@@ -50,7 +50,7 @@ header.header {
   animation: fadeInDown 800ms ease both;
 }
 
-/* Banner image — обычный элемент страницы, прокручивается */
+/* Banner */
 .banner {
   width: 100%;
   max-width: 1200px;
@@ -60,8 +60,7 @@ header.header {
   box-shadow: 0 14px 30px rgba(0,0,0,0.18);
 }
 
-.banner-image,
-.header-image {
+.banner-image {
   width: 100%;
   display: block;
   height: auto;
@@ -72,14 +71,13 @@ header.header {
   will-change: transform;
 }
 
-/* gentle hover/scale on large pointers */
 .banner:hover .banner-image,
 .banner:focus-within .banner-image {
   transform: scale(1.02);
   filter: saturate(1.06) contrast(1.02);
 }
 
-/* Main layout */
+/* Main content */
 .main-content {
   max-width: 1000px;
   margin: 0 auto 80px;
@@ -109,7 +107,7 @@ header.header {
   transform: translateY(-6px) scale(1.01);
 }
 
-/* Link button */
+/* Links */
 .next-page {
   display: inline-block;
   margin-top: 12px;
@@ -132,7 +130,7 @@ header.header {
 ul { margin-left: 18px; }
 ul li { margin: 10px 0; }
 
-/* Fade-in animation class (used by JS) */
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(22px);
@@ -140,30 +138,17 @@ ul li { margin: 10px 0; }
   animation-delay: 0.12s;
 }
 
-/* Keyframes */
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(22px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-18px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 720px) {
   .main-content { padding: 0 14px; }
   .banner { margin: 20px 12px; border-radius: 10px; }
