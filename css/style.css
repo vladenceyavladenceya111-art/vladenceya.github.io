@@ -1,4 +1,9 @@
-/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --accent: #1b3b6f;
   --accent-2: #3752a0;
@@ -7,7 +12,6 @@
   --text: #222;
 }
 
-/* Base */
 html, body {
   height: 100%;
 }
@@ -22,7 +26,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header */
 header.header {
   background: var(--accent);
   color: #fff;
@@ -43,7 +46,6 @@ header.header {
   animation: fadeInDown 800ms ease both;
 }
 
-/* Banner */
 .banner {
   width: 100%;
   max-width: 1200px;
@@ -70,14 +72,12 @@ header.header {
   filter: saturate(1.06) contrast(1.02);
 }
 
-/* Main content */
 .main-content {
   max-width: 1000px;
   margin: 0 auto 80px;
   padding: 0 20px;
 }
 
-/* Sections */
 .section {
   margin-bottom: 36px;
   background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
@@ -87,7 +87,6 @@ header.header {
   backdrop-filter: blur(2px);
 }
 
-/* Section images */
 .section-image {
   width: 100%;
   border-radius: 12px;
@@ -100,7 +99,6 @@ header.header {
   transform: translateY(-6px) scale(1.01);
 }
 
-/* Links */
 .next-page {
   display: inline-block;
   margin-top: 12px;
@@ -119,11 +117,9 @@ header.header {
   box-shadow: 0 18px 36px rgba(55,82,160,0.16);
 }
 
-/* Lists */
 ul { margin-left: 18px; }
 ul li { margin: 10px 0; }
 
-/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(22px);
@@ -131,7 +127,6 @@ ul li { margin: 10px 0; }
   animation-delay: 0.12s;
 }
 
-/* Keyframes */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(22px); }
   to { opacity: 1; transform: translateY(0); }
@@ -142,7 +137,6 @@ ul li { margin: 10px 0; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
 @media (max-width: 720px) {
   .main-content { padding: 0 14px; }
   .banner { margin: 20px 12px; border-radius: 10px; }
