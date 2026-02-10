@@ -37,6 +37,33 @@ header.header {
   box-shadow: 0 6px 18px rgba(0,0,0,0.18);
   backdrop-filter: blur(4px);
 }
+header.header {
+  position: relative; /* добавляем это */
+}
+
+.lang-switch {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+}
+
+.lang-switch button {
+  background: var(--accent-2);
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.lang-switch button:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
 
 .header-title {
   font-size: clamp(20px, 3.2vw, 36px);
@@ -164,4 +191,5 @@ ul li { margin: 10px 0; }
   .header-title { font-size: 20px; }
   .next-page { padding: 10px 18px; }
 }
+
 
