@@ -27,6 +27,7 @@ const allText = document.querySelectorAll('[data-ru]');
 allText.forEach(el => el.textContent = el.getAttribute('data-en'));
 langBtn.textContent = 'RU'; // кнопка показывает, на какой язык переключить
 
+// Обработчик клика для смены языка
 langBtn.addEventListener('click', () => {
   if(lang === 'en'){
     allText.forEach(el => el.textContent = el.getAttribute('data-ru'));
